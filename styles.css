@@ -3,7 +3,7 @@
 
 :root {
     --laranja-claro: #FF862A;
-}
+ }
 
 body {
     font-size: 1rem;
@@ -26,7 +26,9 @@ section {
 }
 
 .inicio-fundo {
+    /* aula 3 */
     background-image: url('img/4965007.jpg');
+    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -36,6 +38,7 @@ section {
     margin: 0 auto;
 }
 
+/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -76,6 +79,7 @@ section {
     background: url('img/flor.png') top right no-repeat,
         url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
 }
 
 #tropicalia .container {
@@ -84,6 +88,7 @@ section {
     justify-content: center;
     position: relative;
     z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
 }
 
 
@@ -108,14 +113,18 @@ h2 {
     background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
 
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
+    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
@@ -127,4 +136,27 @@ h2 {
 
 .form-control {
     background-color: #F1EDEF;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
 }
